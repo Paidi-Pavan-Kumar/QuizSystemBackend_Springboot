@@ -65,7 +65,11 @@ A Spring Boot-based backend API for an Online Quiz System. This project provides
 
 ### 🔐 Auth Controller
 
-Contains endpoints for user registration and authentication (not listed above for brevity).
+| Method | Endpoint              | Description           |
+|--------|-----------------------|-----------------------|
+| POST   | `/api/auth/register`  | User can register     |
+| POST   | `/api/auth/login`     | User can login        |
+| GET    | `/api/auth/profile`   | User can view profile |
 
 ---
 
