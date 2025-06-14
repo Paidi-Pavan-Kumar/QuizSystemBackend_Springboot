@@ -69,8 +69,8 @@ public class Configure {
                         // .requestMatchers("/api/users/all", "/api/questions/**",
                         // "/api/options/**").hasRole("ADMIN")
                         // .anyRequest().authenticated())
-
-                        .requestMatchers("/api/auth/login", "/api/auth/register").permitAll()
+                        
+                        .requestMatchers("/api/auth/login", "/api/auth/register", "/api/auth/sde").permitAll()
                         .requestMatchers("/api/auth/profile").hasAnyRole("USER", "ADMIN")
                         .anyRequest().authenticated())
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
